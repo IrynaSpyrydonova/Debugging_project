@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 60vw;
+    height: 100vh;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    margin-bottom: 1rem;
+}
+
+.btn button {
+    font-size: 1rem;
+    padding: .3rem;
+    color: #fff;
+    background: #333;
+    border-radius: 3px;
+}
+
+.btn button:hover {
+    color: #333;
+    background: #fff;
+}
