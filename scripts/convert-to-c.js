@@ -3,7 +3,11 @@
 console.log('-- loading: convertToC');
 
 
-function convertToC() { }
+function convertToC(arg) {
+
+  const c = (arg - 32) * 5 / 9;
+  return c;
+ }
 
 
 {
@@ -46,11 +50,17 @@ function convertToCHandler() {
   debugger;
 
   // read user input
+  const input = prompt(`Please enter the temperature in Fahrenheit`);
+  const f = Number(input);
 
   // core logic
   const result = convertToC(f);
 
   // display for use
 
+  alert(`The temperature is ${result} C`);
+
   // log for developers
+
+  console.log(result);
 }
