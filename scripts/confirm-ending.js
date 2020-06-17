@@ -3,7 +3,10 @@
 console.log('-- loading: confirmEnding');
 
 
-function confirmEnding() { }
+function confirmEnding(arg, ending) {
+
+  return arg.endsWith(ending);
+}
 
 
 {
@@ -65,11 +68,17 @@ function confirmEndingHandler() {
   debugger;
 
   // read user input
+  const input1 = prompt('Put some random text');
+  const str = String(input1);
+  const input2 = prompt (`Please confirm the ending` );
+  const ending = String(input2);
 
   // core logic
   const result = confirmEnding(str, ending);
 
   // display for use
+  alert(result);
 
   // log for developers
+  console.log(result);
 }
