@@ -2,8 +2,18 @@
 
 console.log('-- loading: repeatStringNumTimes');
 
+ 
 
-function repeatStringNumTimes() { }
+ // program logic
+
+ function repeatStringNumTimes(str, times) {
+ let repeatStr = '';
+ for (let i = 0; i < times; i++) {
+   repeatStr += str;
+ }
+
+ return repeatStr;
+}
 
 
 {
