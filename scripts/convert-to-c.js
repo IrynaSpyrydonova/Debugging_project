@@ -5,8 +5,9 @@ console.log('-- loading: convertToC');
 
 function convertToC(arg) {
 
-  const c = (arg - 32) * 5 / 9;
-  return c;
+  const celsius = (arg - 32) * 5 / 9;
+  const celsiusRound = ( Math.floor(celsius * 100) / 100 );
+  return celsiusRound;
  }
 
 
@@ -51,16 +52,18 @@ function convertToCHandler() {
 
   // read user input
   const input = prompt(`Please enter the temperature in Fahrenheit`);
-  const f = Number(input);
-
   // core logic
-  const result = convertToC(f);
-
-  // display for use
-
-  alert(`The temperature is ${result} C`);
-
-  // log for developers
-
-  console.log(result);
+  if (input === null || input === "") {
+    alert('Please enter a valid number');
+  } else {
+      let inputConfirmed = +input;
+      if (Object.is(inputConfirmed, NaN)) { alert('Be sure you are entering a number! Try again. ');}
+        else {
+        const result = convertToC(inputConfirmed);
+        // display for use
+        alert(`The temperature is ${result} Celsius`);
+        // log for developers
+        console.log(result);
+        }
+  }
 }

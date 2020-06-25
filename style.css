@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background: url('./img/opened-notebook-with-silver-pen-near-magnolia-4210787.jpg') no-repeat center center/cover;
+}
+
 .container {
     display: flex;
     width: 60vw;
@@ -29,4 +33,8 @@
 .btn button:hover {
     color: #333;
     background: #fff;
+}
+
+.btn button:focus {
+    outline: none;
 }
