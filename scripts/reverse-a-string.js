@@ -52,12 +52,17 @@ function reverseStringHandler() {
   debugger;
 
   // read user input
+const userInput = prompt('Let me know your word');
+const str = String(userInput);
+
 
   // core logic
   const result = reverseString(str);
 
   // display for use
+  alert(result);
 
   // log for developers
+  console.log(result);
 }
 
